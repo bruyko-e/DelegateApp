@@ -23,6 +23,12 @@ class CustomButton: UIButton {
 
 // MARK: - Setup View
 extension CustomButton {
+	private func addAction() {
+		let action = UIAction { _ in
+			// Здесь будет экшен кнопки
+		}
+		addAction(action, for: .touchUpInside)
+	}
 	private func setupButton(text: String, bgColor: UIColor) {
 		setTitle(text, for: .normal)
 		setTitleColor(.white, for: .normal)
