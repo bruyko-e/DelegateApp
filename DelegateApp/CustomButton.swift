@@ -12,6 +12,7 @@ class CustomButton: UIButton {
 	init(textButton: String, bgColor: UIColor) {
 		super.init(frame: .zero)
 		setupButton(text: textButton, bgColor: bgColor)
+		addAction()
 	}
 	
 	@available(*, unavailable)
